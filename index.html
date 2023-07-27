@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content=""IE-edge>
+        <meta name="viewpoint" content=""width-device-width,intital-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id ="header">
+            <div class="container">
+                <nav>
+                    <img src=" " class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Porfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Student</p>
+                    <h1>Hi, I'm <span>Kamalesh</span></h1>
+                </div>
+            </div>
+        </div>
+<!-------------------about----------------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="C:\Users\ASUS\Downloads\IMG20230708193051-01.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I’m a Artificial Intelligence and Data Science Student with a focus in Data Analyst. I’m hardworking, diligent, and dedicated in all qualities and I put forward in everything I do.</p>
+
+                        <p>Eager to join professional world with keen interest to implement and calibrate technical skill set in professional world.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class ="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Coding</span><br>Python<br>Data Structure<br>R Programming</li>
+                                    <li><span>Frontend</span><br>HTML-CSS</li>
+                                    <li><span>Non-Technical</span><br>Share Market<br>Binary Trading<br>Photoshop</li>
+                                </ul>
+                            </div>
+                            <div class ="tab-contents" id="projects">
+                                <ul>
+                                    <li><span>2023</span><br>Voice Assistant</li>
+                                    <li><span>2022</span><br>Music Player</li>
+                                    <li><span></span></li>
+                                </ul>
+                            </div>
+                            <div class ="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021</span><br>Completed Schooling </li>
+                                    <li><span>2021-2025</span><br>Artificial Intelligence & Data Science</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for (tablink of tablinks){
+                    tablink.classList.remove("active-link");   
+                }
+                for (tabcontent of tabcontents){
+                    tablink.classList.remove("active-tab");   
+                }
+            }
+        </script>
+
+    
+</body>
+</html>
